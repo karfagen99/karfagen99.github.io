@@ -1,12 +1,22 @@
+<?php
+require_once 'bd.php'; 
+ 
+
+$link = mysqli_connect($host, $user, $password, $database) 
+    or die("Ошибка " . mysqli_error($link));
+ 
+mysqli_close($link);
+?>
+
 <main role="main">
 <div class="wrapper">
 	<nav class="navbar  bg-dark justify-content-center">
 		<div class="d-flex justify-content-center">
-	<a href="index.html" class="navbar-brand text-white">Main page</a>
+	<a href="index.php" class="navbar-brand text-white">Main page</a>
   <a href="#" class="navbar-brand text-white">Steam</a>
   <a href="https://vk.com/maybuk97" class="navbar-brand item text-white">Vk</a>
   <a href="https://github.com/karfagen99" class="navbar-brand item text-white ">Github</a>
-  <a href="books.html" class="navbar-brand item text-white">Books</a>
+  <a href="books.php" class="navbar-brand item text-white">Books</a>
 		</div>
 
   <form class="form-inline ">

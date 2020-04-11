@@ -1,11 +1,8 @@
 <?php
-require_once 'bd.php'; 
+require_once "config.php";
+$db = DB::getInstance(); 
  
 
-$link = mysqli_connect($host, $user, $password, $database) 
-    or die("Ошибка " . mysqli_error($link));
- 
-mysqli_close($link);
 ?>
 
 <main role="main">
@@ -16,6 +13,7 @@ mysqli_close($link);
   <a href="#" class="navbar-brand text-white">Steam</a>
   <a href="https://vk.com/maybuk97" class="navbar-brand item text-white">Vk</a>
   <a href="https://github.com/karfagen99" class="navbar-brand item text-white ">Github</a>
+  <a href="https://gitlab.com/Eyeofgod" class="navbar-brand item text-white ">Gitlab</a>
   <a href="books.php" class="navbar-brand item text-white">Books</a>
 		</div>
 

@@ -2,6 +2,7 @@
 
 body {
 	background-color: #8c8c8c;
+	font-family: "Arial";
 	
 
 }
@@ -13,6 +14,7 @@ header{
 }
 
 main{
+	font-family: "Arial";
 	width: 100%;
 	display: block;
 	margin: 0 auto;
@@ -51,6 +53,7 @@ footer {
 }
 
 .main-tab{
+	font-family: "Arial";
 	max-width: 900px;
 	margin: 0 auto;
 	margin-top: 8px;
@@ -86,6 +89,7 @@ footer {
 }
 
 h1 {
+	font-family: "Arial";
 	color: white;
 	font-size: 15px;
 }
@@ -97,6 +101,7 @@ h1 {
 }
 
 .text-area-field {
+	font-family: "Arial";
 	font-size: 20px;
 }
 
@@ -114,4 +119,88 @@ h1 {
 .main-tab-info {
 	padding: 10px;
 	margin-top: 10px;
+}
+
+/* Modal window style */
+
+.vmodal {}
+
+.vmodal.open .modal-overlay,
+.vmodal.open .modal-window{
+	opacity: 1;
+	z-index: 1;
+}
+
+.vmodal.hide .modal-overlay,
+.vmodal.hide .modal-window{
+	opacity: 1;
+	z-index: 1;
+}
+
+.modal-window, .modal-overlay {
+	opacity: 0;
+	z-index: -1;
+}
+
+.vmodal.open .modal-window {
+	transform: translateY(100px);
+}
+
+.vmodal.open .modal-overlay {
+	background: rgba(0, 0, 0, .5);
+}
+
+.vmodal.hide .modal-window {
+	transform: translateY(-200px);
+}
+
+.vmodal.hide .modal-overlay {
+	background: rgba(0, 0, 0, 0);
+}
+
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0);
+	transition: background .2s ease-in;
+}
+
+.modal-window {
+	width: 600px;
+	border-radius: 5px;
+	background: white;
+
+	margin: 0 auto;
+	transform: translateY(-200px);
+	transition: transform .2s ease-in;
+}
+
+.modal-header {
+	padding: 5px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.modal-close {
+	cursor: pointer;
+}
+
+.modal-footer {
+	padding: 10px 5px;
+
+}
+
+.modal-body {
+	padding: 10px;
+}
+
+.modal-body p {
+	margin: 0 0 5px;
+}
+.modal-footer {
+	display: flex;
+	justify-content: space-between;
 }

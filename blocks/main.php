@@ -17,6 +17,9 @@ $db = DB::getInstance();
   <a href="books.php" class="navbar-brand item text-white">Books</a>
 		</div>
 
+
+
+
   <form class="form-inline ">
     <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -184,5 +187,7 @@ $db = DB::getInstance();
 	</div>
 </div>
 </div>
-
+<script src="../base.js"></script>
+<script src="../plugins/modal.js"></script>
+<script src="../index.js"></script>
 </main>

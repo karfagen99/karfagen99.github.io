@@ -2,10 +2,11 @@
 //include("db.php");
 include ("query/query_dev.php");
 include("config.php");
+
 $db = DB::getInstance();
 $tag = $db->query_($query_select_all_from_tags);
 $pages = $db->query_($query_select_all_page);
-$data = $db->get_p();
+// $data = $db->get_p();
 $d = $db->get_id($query_select_from_join_on);
 $tags = $db->get_tag($query_select_tag_page);
 ?>
@@ -32,7 +33,9 @@ $tags = $db->get_tag($query_select_tag_page);
   <form class="form-inline" method="post">
     <input class="form-control mr-sm-2 "  name="search1" type="text" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <a href="addpost.php"><button type="button" class="btn btn-outline-warning ml-2">Добавить запись</button></a>
   </form>
+
 </nav>
 <div class="main-tab">
 	<div class="tag-bar">
@@ -64,6 +67,7 @@ $tags = $db->get_tag($query_select_tag_page);
     <?php endforeach; ?>
 	</div>
 </main>
+
 <!--<a href="#" class="navbar-brand text-white">ff</a>
  <a href="#" class="navbar-brand item text-white">#tag</a>
  <a href="#" class="navbar-brand item text-white ">#tag</a>

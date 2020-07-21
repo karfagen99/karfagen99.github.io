@@ -24,7 +24,7 @@ $tags = $db->get_tag($query_select_tag_page);
 	<nav class="navbar  bg-dark justify-content-center">
 		<div class="d-flex justify-content-center">
   <a href="index.php" class="navbar-brand text-white">Main page</a>
-  <a href="#" class="navbar-brand text-white">Steam</a>
+  <a href="https://steamcommunity.com/id/neshark/" class="navbar-brand text-white">Steam</a>
   <a href="https://vk.com/maybuk97" class="navbar-brand item text-white">Vk</a>
   <a href="https://github.com/karfagen99" class="navbar-brand item text-white ">Github</a>
   <a href="https://gitlab.com/Eyeofgod" class="navbar-brand item text-white ">Gitlab</a>

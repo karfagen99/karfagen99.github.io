@@ -1,5 +1,5 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap');
 body {
 	background-color: #8c8c8c;
 	font-family: "Arial";
@@ -12,6 +12,39 @@ header{
 
 
 }
+
+.__register-group .btn-primary {
+	background-color: green;
+	border-color: green;
+}
+
+.__register-group{
+	display: flex;
+	margin: auto;
+	padding: 10px;
+	justify-content: center;
+	flex-direction: column;
+	width: 400px;
+}
+
+.__register-group .__label-register h2 {
+	font-family: 'Exo 2', sans-serif;
+	color: azure;
+	text-align: center;
+	font-size: 20px;
+	margin: 0.5em auto;
+}
+
+.__form-register {
+	margin-top: 2em;
+	text-align: center;
+}
+
+.__form-register h2 {
+	color: aliceblue;
+	font-family: 'Exo 2', sans-serif;
+}
+
 
 main{
 	font-family: "Arial";

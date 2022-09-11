@@ -14,13 +14,15 @@ $db = DB::getInstance();
   <a href="https://vk.com/maybuk97" class="navbar-brand item text-white">Vk</a>
   <a href="https://github.com/karfagen99" class="navbar-brand item text-white ">Github</a>
   <a href="https://gitlab.com/Eyeofgod" class="navbar-brand item text-white ">Gitlab</a>
-  <a href="#" class="navbar-brand item text-white">Books</a><h1 class="warn">(in dev)</h1>
+  <a href="#" class="navbar-brand item text-white">Books</a>
 		</div>
 
   <form class="form-inline ">
     <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button><h1 class="warn">(in dev)</h1>
+    <button class="btn btn-outline-success my-2 my-sm-0 mr-2" type="submit">Search</button>
   </form>
+
+        <a href="register.php" class="navbar-brand item text-white">Reg</a>
 </nav>
 
 <div class="main-tab">

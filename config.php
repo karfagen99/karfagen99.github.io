@@ -9,7 +9,7 @@ class DB
     private  static $db_host = "localhost";
     private static  $db_database = "dev_site";
     private  static $db_user = "root";
-    private static $db_pass = "";
+    private static $db_pass = "root";
 
 //
 
@@ -30,18 +30,27 @@ class DB
             return new self;
         }
 
-	    public function query_(string $sql, array $params = [])
+
+
+	    public function query_(string $sql, array $params)
 	    {
             //$this->pdo->exec('USE dev_site');
+
 	        $sth = $this->pdo->prepare($sql);
-	        $result = $sth->execute($params);
+            $sth->execute($params);
+
+            //$sth->execute($params);
+
             //echo "\nPDO::errorInfo():\n";
-            //print_r($sth->errorInfo());
-	        if ($result === false) {
-						return null;
-	        }
-	        return $sth->fetchAll(PDO::FETCH_ASSOC);
+            print_r($sth->errorInfo());
+//	        if ($result === false) {
+//						return null;
+//	        }
+//	        return $sth->fetchAll(PDO::FETCH_ASSOC);
 	    }
+
+
+
 
 	    public function get_category_by_id(string $sql){
 	        $st = $this->pdo->query($sql);

@@ -2,7 +2,7 @@
 $host = 'localhost';
 $db_name = 'dev_site';
 $db_user = 'root';
-$db_pass = '';
+$db_pass = 'root';
 $charset = 'utf8';
 $driver = 'mysql';
 $options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
